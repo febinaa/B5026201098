@@ -68,7 +68,7 @@
             <center><h1>WELCOME!!</h1></center>
             <br>
 
-                       <p>Dear,
+                       <p>Hello,
                            <?php
                             if ($sex == "male") {
                             echo "Mr.";
