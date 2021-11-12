@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>febbb's thrift shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head> 
+
+<style type="text/css"> 
+
+     body{ font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+          font-size: 15px; 
+          background-image: url("images/bg.jpeg"); 
+
+		}
+		input[type=text]{
+            width: 35%;
+		}
+
+	</style>
+
+
+<body>
+
+    <div class="container mt-3">
+
+<center>
+        
+     <h1 class="jumbotron p-5 bg-secondary text-white">febbb's THRIFT SHOP <br> everything you need is here!!</h1>
+        
+       <input class="form-control bg-light" id="myInput" type="text" placeholder="Search..">
+       <br>
+
+</center>
+
+        <table class="table table-light">
+            <thead class="table-warning">
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th></th>
+                <th>Status</th>
+            </tr>
+            </thead>
+
+            <tbody id="myTable">
+            <tr>
+                <td>BS-0101</td>
+                <td>Blouse</td>
+                <td>30.000</td>
+                <td><img src="images/blouse1.jpeg" alt="blouse1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>SH-0101</td>
+                <td>Shirt</td>
+                <td>50.000</td>
+                <td><img src="images/shirt1.jpeg" alt="shirt1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>SK-0101</td>
+                <td>Skirt</td>
+                <td>27.000</td>
+                <td><img src="images/skirt1.jpeg" alt="skirt1" width="100" height="100"></td>
+                <td><button class="btn btn-danger">Sold</button></td>
+            </tr>
+            <tr>
+                <td>DS-0101</td>
+                <td>Dress</td>
+                <td>150.000</button></td>
+                <td><img src="images/dress1.jpeg" alt="dress1" width="90" height="120"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>DS-0202</td>
+                <td>Dress</td>
+                <td>95.000</button></td>
+                <td><img src="images/dress2.jpeg" alt="dress2" width="100" height="100"></td>
+                <td><button class="btn btn-danger">Sold</button></td>
+            </tr>
+            <tr>
+                <td>PS-0101</td>
+                <td>Pants</td>
+                <td>35.000</button></td>
+                <td><img src="images/pants1.jpeg" alt="pants1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>JT-0101</td>
+                <td>Jacket</td>
+                <td>55.000</button></td>
+                <td><img src="images/jacket1.jpeg" alt="jacket1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>ST-0101</td>
+                <td>Suit</td>
+                <td>70.000</button></td>
+                <td><img src="images/suit1.jpeg" alt="suit1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>CT-0101</td>
+                <td>Coat</td>
+                <td>115.000</button></td>
+                <td><img src="images/coat1.jpeg" alt="coat1" width="100" height="100"></td>
+                <td><button class="btn btn-danger">Sold</button></td>
+            </tr>
+            <tr>
+                <td>VT-0101</td>
+                <td>Vest</td>
+                <td>20.000</button></td>
+                <td><img src="images/vest1.jpeg" alt="vest1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>JS-0101</td>
+                <td>Jumpsuite</td>
+                <td>60.000</button></td>
+                <td><img src="images/jumsuite1.jpeg" alt="jumsuite1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>JS-0202</td>
+                <td>Jumpsuite</td>
+                <td>80.000</button></td>
+                <td><img src="images/jumsuite2.jpeg" alt="jumsuite2" width="90" height="160"></td>
+                <td><button class="btn btn-danger">Sold</button></td>
+            </tr>
+            <tr>
+                <td>KD-0101</td>
+                <td>Kids</td>
+                <td>15.000</button></td>
+                <td><img src="images/kids1.jpeg" alt="kids1" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>KD-0202</td>
+                <td>Kids</td>
+                <td>45.000</button></td>
+                <td><img src="images/kids2.jpeg" alt="kids2" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            <tr>
+                <td>KD-0303</td>
+                <td>Kids3</td>
+                <td>20.000</td>
+                <td><img src="images/kids3.jpeg" alt="kids3" width="100" height="100"></td>
+                <td><button class="btn btn-warning">Order</button></td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <center>
+            <h3 class="jumbotron p-5 text-dark">happy shopping peps!!</h3>
+        </center>
+</div>
+
+
+
+<script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>    
+
+</body>
+</html>
