@@ -13,8 +13,11 @@ class MutasiController extends Controller
     	// mengambil data dari table mutasi
     	$mutasi = DB::table('mutasi')->get();
 
+
+
+
     	// mengirim data pegawai ke view index
-    	return view('mutasi.index',['mutasi' => $mutasi]);
+    	return view('mutasi.index',['mutasi' => $mutasi] );
 
     }
 
@@ -22,9 +25,10 @@ class MutasiController extends Controller
         // method untuk menampilkan view form tambah mutasi
     public function tambah()
     {
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
 
         // memanggil view tambah
-        return view('mutasi.tambah');
+        return view('mutasi.tambah', ['pegawai' => $pegawai]);
 
     }
 
@@ -50,8 +54,10 @@ class MutasiController extends Controller
     {
         // mengambil data pegawai berdasarkan id yang dipilih
         $mutasi = DB::table('mutasi')->where('ID',$ID)->get();
+
+        $pegawai = DB::table('pegawai')->get();
         // passing data pegawai yang didapat ke view edit.blade.php
-        return view('mutasi.edit',['mutasi' => $mutasi]);
+        return view('mutasi.edit',['mutasi' => $mutasi, 'pegawai' => $pegawai]);
 
     }
 
