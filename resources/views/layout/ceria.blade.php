@@ -23,7 +23,7 @@
    <title>@yield('title')</title>
 </head>
 <body>
-    <h1>@yield('judulhalaman')</h1>
+
 
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
@@ -49,7 +49,7 @@
             <a href="/absen"> Absen</a>
           </li>
           <li>
-            <a href="#"> Praktikum</a>
+            <a href="#"> Harddisk</a>
           </li>
           {{-- <li>
             <a href="#"> Top Review</a>
@@ -66,22 +66,21 @@
 
     </ul>
 
-    <div class="footer" style="font-family:Arial, Helvetica, sans-serif">
-      <p>
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-         oleh 5026201098 - Febina Mushen Anjelita
-      </p>
-    </div>
+
 
     </nav>
 
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5 pt-5">
+        <center><h3>@yield('judulhalaman')</h3></center>
         @section('isikonten')
+
         @show
+        <footer id="footer" class="footer">
+            <center> <div class="copyright">
+              &copy; Copyright <strong><span>Febina Mushen Anjelita - 5026201098</span></strong>
+            </div></center>
+
       </div>
 		</div>
 

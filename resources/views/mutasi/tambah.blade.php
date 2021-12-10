@@ -4,7 +4,7 @@
 
 @section('isikonten')
 
-	<h3>Tambah Mutasi Pegawai</h3>
+@section('judulhalaman', 'TAMBAH MUTASI')
 
 	<a href="/mutasi" class="btn btn-secondary"> Kembali</a>
 
@@ -16,8 +16,14 @@
 
 
 
-		ID Pegawai <input type="number" name="IDPegawai" required="required"  class="form-control"> <br/>
-		Departemen <input type="text" name="Departemen" required="required"  class="form-control"> <br/>
+        <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <select class="form-select" name="IDPegawai" aria-label="Default select example">
+            @foreach($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
+            @endforeach
+        </select><br>
+            </div>		Departemen <input type="text" name="Departemen" required="required"  class="form-control"> <br/>
 		Sub Departemen <input type="text" name="SubDepartemen" required="required"  class="form-control"> <br/>
 
         <div class="mb-3">

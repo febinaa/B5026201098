@@ -4,7 +4,10 @@
 
 @section('isikonten')
 
-    <h3>Tambah Pegawai</h3>
+@section('judulhalaman', 'TAMBAH PEGAWAI')
+
+
+    {{-- <h3>Tambah Pegawai</h3> --}}
 
 	<a href="/pegawai" class="btn btn-secondary"> Kembali</a>
 

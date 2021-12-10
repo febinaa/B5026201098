@@ -4,8 +4,8 @@
 
 @section('isikonten')
 
-
-    <h3> Edit Absen Pegawai</h3>
+@section('judulhalaman', 'EDIT ABSEN PEGAWAI')
+    {{-- <h3> Edit Absen Pegawai</h3> --}}
 
     <a href="/absen " class="btn btn-secondary">Kembali</a>
 

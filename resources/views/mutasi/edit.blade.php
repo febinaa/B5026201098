@@ -4,6 +4,9 @@
 
 @section('isikonten')
 
+@section('judulhalaman', 'EDIT MUTASI PEGAWAI')
+
+
 	<h3>Edit Mutasi Pegawai</h3>
 
 	<a href="/mutasi" class="btn btn-secondary"> Kembali</a>

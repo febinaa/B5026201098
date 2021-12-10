@@ -50,7 +50,9 @@ Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
+Route::get('/pegawai/cari','PegawaiController@cari');
 
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
 
 
 Route::get('/mutasi','MutasiController@index');
@@ -65,9 +67,13 @@ Route::post('/mutasi/update','MutasiController@update');
 
 Route::get('/mutasi/hapus/{ID}','MutasiController@hapus');
 
+Route::get('/mutasi/cari','MutasiController@cari');
+
+
 Route::get('/absen','AbsenController@index');
 Route::get('/absen/tambah','AbsenController@tambah');
 Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/cari','AbsenController@cari');

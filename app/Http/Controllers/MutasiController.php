@@ -11,8 +11,12 @@ class MutasiController extends Controller
     public function index()
     {
     	// mengambil data dari table mutasi
-    	$mutasi = DB::table('mutasi')->get();
+    	$mutasi = DB::table('mutasi')->paginate(3) ;
 
+        $mutasi = DB::table('mutasi')
+        ->join('pegawai', 'mutasi.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('mutasi.*', 'pegawai.pegawai_nama')
+        ->paginate(3);
 
 
 
@@ -56,6 +60,8 @@ class MutasiController extends Controller
         $mutasi = DB::table('mutasi')->where('ID',$ID)->get();
 
         $pegawai = DB::table('pegawai')->get();
+
+
         // passing data pegawai yang didapat ke view edit.blade.php
         return view('mutasi.edit',['mutasi' => $mutasi, 'pegawai' => $pegawai]);
 
@@ -85,4 +91,24 @@ class MutasiController extends Controller
         // alihkan halaman ke halaman mutasi
         return redirect('/mutasi');
     }
+
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+
+    	// mengambil data dari table pegawai sesuai pencarian data
+		$mutasi = DB::table('mutasi')
+		->where('mutasi_nama','like',"%".$cari."%")
+        ->orWhere('mutasi_Departemen','like',"%".$cari."%")
+		->paginate();
+
+
+
+    	// mengirim data mutasi ke view index
+		return view('mutasi.index',['mutasi' => $mutasi]);
+
+	}
+
+
 }
