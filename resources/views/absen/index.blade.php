@@ -14,13 +14,12 @@
 
     <div class="container">
         <div>
-	    <form action="/mutasi/cari" method="GET">
+	    <form action="/absen/cari" method="GET">
 		<input type="text" name="cari" placeholder="Cari Absen Pegawai .." value="{{ old('cari') }}">
 		<input class="btn-success" type="submit" value="CARI" >
 	    </form>
         </div>
     </div>
-    <br>
 
 	<table class="table table-success table-striped">
 		<tr>

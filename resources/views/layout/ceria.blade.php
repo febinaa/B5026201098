@@ -31,9 +31,9 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-primary">
         </button>
     </div>
-          <div class="img bg-wrap text-center py-4" style="background-image: url('https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/258855008_3034770416838278_4290346668479138856_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=kCmmW3dMfysAX-OQecm&_nc_ht=scontent-sin6-4.xx&oh=5fffd3c417b6248210eac4aeb07dc12d&oe=61B0BEA7');">
+          <div class="img bg-wrap text-center py-4" style="background-image: url('https://scontent.fsub8-1.fna.fbcdn.net/v/t39.30808-6/258855008_3034770416838278_4290346668479138856_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=n0PpjNjsmtsAX_kgpzo&_nc_ht=scontent.fsub8-1.fna&oh=00_AT-xtNB32bxZVsyDbjQIa1uWcr6UOoM0AYmzi0nwYvJg8w&oe=61BC9C27');">
               <div class="user-logo">
-                  <div class="img" style="background-image: url('https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/259259636_3034770450171608_100674922277793135_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=8LnFygbe8VEAX_D-ARW&tn=-aGcG6rOj88lLAmu&_nc_ht=scontent-sin6-3.xx&oh=43a472717a92cbd28ce3f8502a4e50a4&oe=61B19353');"></div>
+                  <div class="img" style="background-image: url('https://scontent.fjog3-1.fna.fbcdn.net/v/t39.30808-6/259259636_3034770450171608_100674922277793135_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ASmelZCwsHcAX85u_Jj&tn=mdK9EVErPH-CEPTg&_nc_ht=scontent.fjog3-1.fna&oh=00_AT9vE__2eWhEAFy-DZAU9-h4lNDitMcdO7Td4WRMEy5VUQ&oe=61BD70D3');"></div>
                   <h3>Febina Mushen Anjelita</h3>
                   <h3>5026201098</h3>
               </div>
@@ -49,7 +49,7 @@
             <a href="/absen"> Absen</a>
           </li>
           <li>
-            <a href="#"> Harddisk</a>
+            <a href="/harddisk"> Harddisk</a>
           </li>
           {{-- <li>
             <a href="#"> Top Review</a>
@@ -76,7 +76,7 @@
         @section('isikonten')
 
         @show
-        <footer id="footer" class="footer">
+        <footer id="footer" class="footer text-center fixed-bottom">
             <center> <div class="copyright">
               &copy; Copyright <strong><span>Febina Mushen Anjelita - 5026201098</span></strong>
             </div></center>

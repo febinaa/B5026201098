@@ -87,8 +87,9 @@ public function cari(Request $request)
 
     	// mengambil data dari table pegawai sesuai pencarian data
 		$absen = DB::table('absen')
-		->where('absen_nama','like',"%".$cari."%")
-        ->orWhere('absen_tanggal','like',"%".$cari."%")
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+		->where('pegawai_nama','like',"%".$cari."%")
+        ->orWhere('Tanggal','like',"%".$cari."%")
 		->paginate();
 
 

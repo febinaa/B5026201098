@@ -97,10 +97,13 @@ class MutasiController extends Controller
 		// menangkap data pencarian
 		$cari = $request->cari;
 
+
     	// mengambil data dari table pegawai sesuai pencarian data
 		$mutasi = DB::table('mutasi')
-		->where('mutasi_nama','like',"%".$cari."%")
-        ->orWhere('mutasi_Departemen','like',"%".$cari."%")
+        ->join('pegawai', 'mutasi.IDPegawai', '=', 'pegawai.pegawai_id')
+		->where('pegawai_nama','like',"%".$cari."%")
+        ->orWhere('Departemen','like',"%".$cari."%")
+
 		->paginate();
 
 
