@@ -97,4 +97,11 @@ Route::get('/harddisk/detail/{id}','HarddiskController@view');
 
 
 
+Route::get('/nilaikuliah','nilaikuliahController@index');
+
+Route::get('/nilaikuliah/tambah','nilaikuliahController@tambah');
+
+Route::post('/nilaikuliah/store','nilaikuliahController@store');
+
+
 

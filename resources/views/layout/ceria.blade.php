@@ -51,10 +51,10 @@
           <li>
             <a href="/harddisk"> Harddisk</a>
           </li>
-          {{-- <li>
-            <a href="#"> Top Review</a>
-          </li>
           <li>
+            <a href="/nilaikuliah"> Nilai Kuliah</a>
+          </li>
+          {{-- <li>
             <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>
           </li>
           <li>
